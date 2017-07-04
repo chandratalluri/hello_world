@@ -31,7 +31,7 @@ public class SessionServlet extends HttpServlet {
 		HttpSession session = request.getSession();
 		session.setAttribute("sessionName", request.getParameter("name"));
 		PrintWriter out=response.getWriter();
-		out.println("Hello"+request.getParameter("name"));
+		out.println("He"+request.getParameter("name"));
 	
 	}
 
